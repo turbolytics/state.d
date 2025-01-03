@@ -1,0 +1,5 @@
+digraph G {
+    s_init;
+    s_end;
+    s_init -> s_end;
+}

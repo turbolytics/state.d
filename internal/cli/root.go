@@ -3,6 +3,7 @@ package cli
 import (
 	"fmt"
 	"os"
+	"turbolytics/state.d/internal/cli/validate"
 
 	"github.com/spf13/cobra"
 )
@@ -18,7 +19,7 @@ func NewRootCommand() *cobra.Command {
 		},
 	}
 
-	// cmd.AddCommand(archiver.NewCommand())
+	cmd.AddCommand(validate.NewCommand())
 
 	return cmd
 }
